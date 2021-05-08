@@ -1,0 +1,446 @@
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+h2,
+p {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: medium;
+}
+
+h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 70%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle1 {
+  margin-bottom: 15%;
+  right: 5%;
+}
+.circle2 {
+  margin-top: 15%;
+  left: 5%;
+}
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+}
+
+.link {
+  display: flex;
+  margin: 2rem 0.5rem;
+  cursor: pointer;
+  align-items: center;
+  transition: 1s;
+}
+.link:hover {
+  transform: scale(1.3);
+}
+
+.link h2 {
+  padding: 0rem 1.5rem;
+}
+.games {
+  flex: 2;
+}
+.pro {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 0.5rem;
+  color: white;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+  margin: 0rem 0.5rem;
+  transition: 1s;
+}
+.pro:hover {
+  transform: scale(1.3);
+}
+.pro h2 {
+  width: 40%;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0rem 0.5rem;
+  font-size: large;
+}
+.status {
+  margin-bottom: 2rem;
+}
+.status h1 {
+  margin-top: 0.5rem;
+}
+.status input {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  outline: none;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+.games {
+  margin-left: 2rem;
+  margin-bottom: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.email-card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 7px;
+  margin: 0.5rem 2rem;
+  padding: 0.3rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  justify-content: space-between;
+}
+.password-card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 7px;
+  margin: 0.5rem 2rem;
+  padding: 0.3rem;
+
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  justify-content: space-between;
+}
+.progress {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  width: 100%;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 60%;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+}
+
+.percentage {
+  font-weight: bold;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0.2rem;
+  margin-left: 0.5rem;
+}
+.email-verify {
+  background: #65dfc9;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+  margin: 0rem 12rem;
+  transition: 1s;
+  width: 25%;
+}
+.email-verify:hover {
+  transform: scale(1.1);
+}
+.email-verify h2 {
+  color: white;
+}
+.dashboard .user .not-verified p {
+  animation: color-change 1s infinite;
+}
+@keyframes color-change {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1.1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  85% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.soccer-ball {
+  position: absolute;
+  top: 32px;
+  left: 144px;
+}
+.verified p {
+  position: absolute;
+
+  left: 34px;
+}
+.player-name {
+  background: linear-gradient(
+    to right,
+    tgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.5)
+  );
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  margin: 1rem 0 10rem 0rem;
+  z-index: 1;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.player-name .txt input {
+  line-height: 65px;
+  background: transparent;
+  outline: none;
+  margin: 0 0 0 0rem;
+  border: none;
+  width: 179px;
+  font-size: 1rem;
+  color: #65dfc9;
+}
+.player-name .txt input::placeholder {
+  color: #65dfc9;
+}
+.btn button {
+  position: absolute;
+  padding: 5px 20px;
+  background: #65dfc9;
+  text-transform: uppercase;
+  color: white;
+  outline: none;
+  border: 0;
+  right: 0.4rem;
+  bottom: 0.3rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn button::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: red;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+.btn button:hover::after {
+  width: 100%;
+}
+.home-card {
+  overflow: scroll;
+  min-height: 80vh;
+}
+@media screen and (max-width: 600px) {
+  .dashboard {
+    display: none;
+  }
+}
+/* iphone 5/se*/
+@media only screen and (device-width: 320px) and (device-height: 568px) {
+  .glass {
+    width: 90%;
+    margin-top: 3.5rem;
+  }
+}
+/* Moto G4*/
+@media only screen and (device-width: 360px) and (device-height: 640px) {
+  .glass {
+    width: 90%;
+    margin-top: 3.5rem;
+  }
+  .mainDiv {
+ max-height:100vh
+  }
+}
+/* iphone x */
+@media only screen and (device-width: 375px) and (device-height: 812px) {
+  .glass {
+    width: 90%;
+    margin-top: 2rem;
+  }
+}
+/* surface Duo */
+@media only screen and (device-width: 540px) and (device-height: 720px) {
+  .glass {
+    width: 90%;
+    margin-top: 2rem;
+  }
+}
+/* Galaxy fold */
+@media only screen and (device-width: 280px) {
+  .glass {
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .mainDiv {
+    position: relative;
+  }
+}
+
+/* Pixel 2*/
+@media only screen and (device-width: 411px) and (device-height: 731px) {
+  .glass {
+    width: 85%;
+    margin-top: 2rem;
+  }
+}
+
+/* Pixel 2 xl*/
+@media only screen and (device-width: 411px) and (device-height: 823px) {
+  .glass {
+    width: 90%;
+    margin-top: 2rem;
+  }
+}
+/* iphone 6/7/8*/
+@media only screen and (device-width: 375px) and (device-height: 667px) {
+  .glass {
+    width: 90%;
+    margin-top: 2rem;
+  }
+}
+/* iphone 6/7/8plus */
+@media only screen and (device-width: 414px) and (device-height: 736px) {
+  .glass {
+    width: 90%;
+    margin-top: 2rem;
+  }
+}
+/* iphone 5/se */
+@media only screen and (device-width: 320px) and (device-height: 568px) {
+  .glass {
+    width: 95%;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+}
+/* iphone x */
+@media only screen and (device-width: 375px) and (device-height: 812px) {
+  .datepicker {
+    width: 100%;
+  }
+}
+/* moto g4 */
+@media only screen and (device-width: 360px) and (device-height: 640px) {
+  .datepicker {
+    width: 100%;
+  }
+}
+/* pixel 2 */
+@media only screen and (device-width: 411px) and (device-height: 731px) {
+  .datepicker {
+    width: 100%;
+  }
+}
+/* pixel 2 xl */
+@media only screen and (device-width: 411px) and (device-height: 823px) {
+  .datepicker {
+    width: 100%;
+  }
+}
+/* iphone 5/se */
+@media only screen and (device-width: 320px) and (device-height: 568px) {
+  .datepicker {
+    width: 100%;
+  }
+} /* iphone 6/7/8 */
+@media only screen and (device-width: 375px) and (device-height: 667px) {
+  .datepicker {
+    width: 100%;
+  }
+}
+/* iphone 6/7/8 plus */
+@media only screen and (device-width: 414px) and (device-height: 736px) {
+  .datepicker {
+    width: 100%;
+  }
+}
+/* galaxy fold */
+@media only screen and (device-width: 280px) and (device-height: 653px) {
+  .datepicker {
+    width: 100%;
+  }
+}
